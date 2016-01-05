@@ -8,6 +8,7 @@ RUN apt-get update && \
 
 LABEL release_notes="This contains the Ubuntu build system required for building OpenWRT images."
 
+# This allows configure to be run as root on the docker instance during make
 ENV FORCE_UNSAFE_CONFIGURE=1
 
 CMD echo 'Going to run make for target $TARGET' && cd Candyhouse-Linux-ROOter/ && make $TARGET
