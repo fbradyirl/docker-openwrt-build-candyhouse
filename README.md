@@ -1,5 +1,5 @@
 # docker-openwrt-build-candyhouse
-Builds a Docker image which allows you to build the latest OpenWRT for Candyhouse based routers.
+Builds a Docker image which allows you to build the latest OpenWRT for Candyhouse based routers (Cisco Linksys EA4500 / E4200v2 / EA3500.
 
 The image simply consists of:
  - The latest Ubuntu
@@ -10,16 +10,16 @@ Note: The OpenWRT code has not been pulled down at this point. That only happens
 To build the docker image, execute the following:
 
 ```bash
-docker build -t="finbarrbrady/openwrt-e4200v2:latest" git://github.com/fbradyirl/docker-openwrt-build-candyhouse
+docker build -t="finbarrbrady/openwrt-linksys-candyhouse:latest" git://github.com/fbradyirl/docker-openwrt-build-candyhouse
 ```
 Now we are ready to execute, and pull down the latest OpenWRT code and build.
 
 To run the docker image and generate a build of OpenWRT for a Linksys EA4500 / E4200v2 router, run:
 ```bash
-docker run -e TARGET=viper finbarrbrady/openwrt-e4200v2:latest
+docker run -e TARGET=viper finbarrbrady/openwrt-linksys-candyhouse:latest
 ```
 
 ... or for a Linksys EA3500 router, run:
 ```bash
-docker run -e TARGET=audi finbarrbrady/openwrt-e4200v2:latest
+docker run -e TARGET=audi finbarrbrady/openwrt-linksys-candyhouse:latest
 ```
