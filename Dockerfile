@@ -2,10 +2,9 @@
 FROM ubuntu
 MAINTAINER Finbarr Brady github.com/fbradyirl
 
-RUN apt-get update
-RUN apt-get install -y git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial gawk wget
-
-RUN git clone https://github.com/fbradyirl/Candyhouse-Linux-ROOter.git
+RUN apt-get update && \
+    apt-get install -y git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial gawk wget && \
+    git clone https://github.com/fbradyirl/Candyhouse-Linux-ROOter.git
 
 ENV FORCE_UNSAFE_CONFIGURE=1
 
