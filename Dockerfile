@@ -3,7 +3,7 @@ FROM ubuntu
 MAINTAINER Finbarr Brady github.com/fbradyirl
 
 RUN apt-get update
-RUN apt-get install -y git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial
+RUN apt-get install -y git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial awk wget
 RUN echo 'openwrt build system dev image v1.0.0' > /README.md
 
 RUN git clone https://github.com/fbradyirl/Candyhouse-Linux-ROOter.git
