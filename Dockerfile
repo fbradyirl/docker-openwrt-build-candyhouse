@@ -7,6 +7,5 @@ RUN apt-get install -y git-core build-essential libssl-dev libncurses5-dev unzip
 RUN echo 'openwrt build system dev image v1.0.0' > /README.md
 
 RUN git clone https://github.com/fbradyirl/Candyhouse-Linux-ROOter.git
-RUN cd Candyhouse-Linux-ROOter/
 
-CMD make $TARGET
+CMD echo 'Going to run make for target $TARGET' && cd Candyhouse-Linux-ROOter/ && make $TARGET
