@@ -14,4 +14,4 @@ LABEL release_notes="This contains the Ubuntu build system required for building
 ENV FORCE_UNSAFE_CONFIGURE=1
 
 # Running make will print instructions to the user
-CMD make
+CMD /bin/bash && make
