@@ -57,4 +57,4 @@ total 24184
 -rw-r--r--  1 finb  staff  5171200  6 Jan 14:34 openwrt-kirkwood-linksys-viper-squashfs-sysupgrade.tar
 ```
 
-You can you the factory bin to flash from stock Linksys firmware, or if you already have a version of OpenWRT installed, you can use the sysupgrade tar file.
+You can use the factory bin to flash from stock Linksys firmware, or if you already have a version of OpenWRT installed, you can use the sysupgrade tar file.
