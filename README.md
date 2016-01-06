@@ -13,7 +13,7 @@ Note: The OpenWRT code has not been pulled down at this point. That only happens
 To build the docker image, execute the following:
 
 ```bash
-docker build -t="finbarrbrady/openwrt-linksys-candyhouse:latest" git://github.com/fbradyirl/docker-openwrt-build-candyhouse
+docker build --no-cache -t="finbarrbrady/openwrt-linksys-candyhouse:latest" git://github.com/fbradyirl/docker-openwrt-build-candyhouse
 ```
 Or you can pull a pre-built version from my hub repository:
 ```bash
@@ -26,10 +26,12 @@ Now we are ready to execute, and pull down the latest OpenWRT code and build.
 
 To run the docker image and generate a build of OpenWRT for a Linksys EA4500 / E4200v2 router, run:
 ```bash
-docker run -e TARGET=viper finbarrbrady/openwrt-linksys-candyhouse:latest
+docker run -it finbarrbrady/openwrt-linksys-candyhouse:latest
+make viper
 ```
 
 ... or for a Linksys EA3500 router, run:
 ```bash
-docker run -e TARGET=audi finbarrbrady/openwrt-linksys-candyhouse:latest
+docker run -it finbarrbrady/openwrt-linksys-candyhouse:latest
+make audi
 ```
