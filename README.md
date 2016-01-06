@@ -1,6 +1,8 @@
 # Overview
 Builds a Docker image which allows you to build the latest OpenWRT for Candyhouse based routers (Cisco Linksys EA4500 / E4200v2 / EA3500 routers).
 
+To get Docker on your machine, download and install the [Docker Toolbox][1].
+
 Step 1: Build or pull down the docker image
 -------
 
@@ -58,3 +60,5 @@ total 24184
 ```
 
 You can use the factory bin to flash from stock Linksys firmware, or if you already have a version of OpenWRT installed, you can use the sysupgrade tar file.
+
+[1]: https://www.docker.com
