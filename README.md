@@ -1,3 +1,5 @@
+[![License: MIT](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/fbradyirl/docker-openwrt-build-candyhouse/blob/master/LICENSE)
+
 # Overview
 Builds a Docker image which allows you to build the latest OpenWRT for Candyhouse based routers (Cisco Linksys EA4500 / E4200v2 / EA3500 routers).
 
